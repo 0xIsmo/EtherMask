@@ -39,7 +39,7 @@ def get_vendor_name(mac):
 def display_banner():
     print(f"""{COLOR_CYAN}
 ==========================================
-   MAC Address Changer v1
+   EtherMask v1
    Developed by: Ismail Jaber
    LinkedIn: https://www.linkedin.com/in/ismail-jaber-496b1631b/
    GitHub:   https://github.com/0xIsmo
@@ -53,7 +53,7 @@ def check_root_privileges():
 def parse_arguments():
     def rich_help():
         console.print(Panel.fit(
-            "[bold cyan]MAC Address Changer v1[/bold cyan]\n"
+            "[bold cyan]EtherMask v1[/bold cyan]\n"
             "Developed by: Ismail Jaber\n"
             "[link=https://www.linkedin.com/in/ismail-jaber-496b1631b/]LinkedIn[/link] | "
             "[link=https://github.com/0xIsmo]GitHub[/link]",
@@ -74,10 +74,10 @@ def parse_arguments():
         console.print(table)
 
         console.print("\n[bold white]Examples:[/bold white]")
-        console.print("  [green]sudo python3 MacChanger.py -i eth0 -m random[/green]")
-        console.print("  [green]sudo python3 MacChanger.py -i wlan0 -m identity[/green]")
-        console.print("  [green]sudo python3 MacChanger.py -i eth0 --mac-interval 60[/green]")
-        console.print("  [green]sudo python3 MacChanger.py -i eth0 -r[/green]\n")
+        console.print("  [green]sudo python3 EtherMask.py -i eth0 -m random[/green]")
+        console.print("  [green]sudo python3 EtherMask.py -i wlan0 -m identity[/green]")
+        console.print("  [green]sudo python3 EtherMask.py -i eth0 --mac-interval 60[/green]")
+        console.print("  [green]sudo python3 EtherMask.py -i eth0 -r[/green]\n")
         sys.exit()
 
     parser = argparse.ArgumentParser(add_help=False)

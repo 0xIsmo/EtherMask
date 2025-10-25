@@ -40,20 +40,20 @@ pip install -r requirements.txt
 ## Quick Usage
 
 ```bash
-# Show help
-python3 macchanger.py -h
+# EtherMask
+python3 EtherMask.py -h
 
-# Change MAC to a random locally-administered address
-sudo python3 macchanger.py -i eth0 -m random
+# EtherMask
+sudo python3 EtherMask.py -i eth0 -m random
 
-# Generate a vendor-based (identity) MAC
-sudo python3 macchanger.py -i wlan0 -m identity
+# EtherMask
+sudo python3 EtherMask.py -i wlan0 -m identity
 
-# Change MAC every 60 seconds (press Ctrl+C to stop and show log)
-sudo python3 macchanger.py -i eth0 --mac-interval 60
+# EtherMask
+sudo python3 EtherMask.py -i eth0 --mac-interval 60
 
-# Restore original MAC from backup
-sudo python3 macchanger.py -i eth0 -r
+# EtherMask
+sudo python3 EtherMask.py -i eth0 -r
 ```
 
 ---
@@ -68,7 +68,7 @@ sudo python3 macchanger.py -i eth0 -r
 
 ## Files
 
-* `macchanger.py` — main script (single-file version)
+* `EtherMask.py` — main script (single-file version)
 * `requirements.txt` — Python dependencies
 * `LICENSE` — MIT license
 * `README.md` — this file
