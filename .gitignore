@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.env/
+.venv/
+original_mac_backup
+.original_mac_backup
+
+# IDE
+.idea/
+# Python
+__pycache__/
+*.pyc
+.venv/
